@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'RobotoMono';
+}
+
+html,body{
+    height: 100%;
+    overflow: hidden;
+}
+
+body{
+  
+    background: url(../imagens/bgk.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .7;
+  }
