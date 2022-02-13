@@ -1,0 +1,49 @@
+
+
+ .navbar-expand-lg.navbar-round.fixed-top.py-2.py-lg-5.elo{
+    background-color: black;
+ 
+}
+section#elo{
+    margin-bottom: 4rem;
+    padding: 4rem;
+}
+
+ #Titles#elo{
+     padding: 20rem;
+ }
+.subElo{
+color: #fee500;
+padding-bottom: 1rem;
+}
+
+
+.custom-select{
+    background-color: transparent;
+}
+
+@media (max-width:820px) {
+.custom-toggler .navbar-toggler-icon.elo {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+  .custom-toggler.navbar-toggler.elo {
+    border:1px solid rgb(255, 255, 255);
+    margin-bottom: 1.5rem;
+  } 
+
+ .navbar-nav.ml-auto.elo{
+     background-color: black;
+ }
+  .nav-item.nav-link.elo{
+    color:rgb(172, 170, 170);
+  }
+  .nav-item.nav-link.elo:hover{
+    color:rgb(255, 255, 255);
+  }
+  .nav-item.nav-link.active.elo{
+    color:rgb(255, 255, 255);
+  }
+  
+}
+
