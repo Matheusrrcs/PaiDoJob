@@ -103,23 +103,24 @@
         <div class="col-md-6 mb-3">
           <div class="form-group text-center">
             <p><span class="badge badge-pill ">1</span> Selecione a Liga e Divisão atual</p>
-            <img src="imagens/Emblem_Gold.png" id="current-image" style="max-height: 200px;">
+            <img src="imagens/Emblem_Silver.png" style="max-height: 200px" id="emblem">
           </div>
           <div class="form-group">
             <label for="ligaatual">Selecione a Liga Atual</label>
-            <select name="ligaatual" id="ligaatual" class="custom-select form-round ">
+            <select name="ligaatual" id="ligaatual" class="custom-select form-round " onclick="changeImg()">
               <option value="ferro">Ferro</option>
               <option value="bronze">Bronze</option>
               <option value="prata" selected="selected">Prata</option>
               <option value="ouro">Ouro</option>
               <option value="platina">Platina</option>
+              <option value="esmeralda" >Esmeralda</option>
               <option value="diamante">Diamante</option>
               <option value="mestre">Mestre</option>
               <option value="grao-mestre">Grão-Mestre</option>
               <option value="desafiante">Desafiante</option>
             </select>
           </div>
-          <div class="form-group" id="boxDivisaoAtual">
+          <div class="form-group " id="boxDivisaoAtual">
             <label for="divisaoatual">Selecione a Divisão Atual</label>
             <select name="divisaoatual" id="divisaoatual" class="custom-select form-round ">
               <option value="IV" selected="selected">IV</option>
@@ -132,16 +133,17 @@
         <div class="col-md-6 mb-3">
           <div class="form-group text-center">
             <p><span class="badge badge-pill ">2</span> Selecione a Liga e Divisão desejada</p>
-            <img src="imagens/Emblem_Bronze.png" id="desired-image" style="max-height: 200px;">
+            <img src="imagens/Emblem_Gold.png"   style="max-height: 200px" id="emblem2">
           </div>
           <div class="form-group">
             <label for="ligadesejada">Selecione a Liga Desejada</label>
-            <select name="ligadesejada" id="ligadesejada" class="custom-select form-round ">
+            <select name="ligadesejada" id="ligadesejada" class="custom-select form-round "  onclick="changeImg2()">
               <option value="ferro">Ferro</option>
               <option value="bronze">Bronze</option>
               <option value="prata" >Prata</option>
               <option value="ouro"  selected="selected">Ouro</option>
               <option value="platina" >Platina</option>
+              <option value="esmeralda" >Esmeralda</option>
               <option value="diamante">Diamante</option>
               <option value="mestre">Mestre</option>
               <option value="grao-mestre">Grão-Mestre</option>
@@ -212,6 +214,7 @@
 
   <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
   <script src="js/telas.js"></script>
+  <script src="js/chagenImgELoRifit.js"></script>
 </body>
 
 </html>

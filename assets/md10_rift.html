@@ -105,17 +105,18 @@
         <div class="col-md-12 mb-3">
           <div class="form-group text-center">
             <p><span class="badge badge-pill ">1</span> Selecione sua última posição</p>
-            <img src="imagens/Emblem_none.png" id="current-image" style="max-height: 200px;">
+            <img src="imagens/Emblem_none.png" id="emblem2" style="max-height: 200px;">
           </div>
           <div class="form-group">
             <label for="ligaatual">Selecione a Liga Atual</label>
-            <select name="ligaatual" id="ligaatual" class="custom-select form-round ">
+            <select name="ligaatual" id="ligaatual2" class="custom-select form-round " onclick="changeImg2()">
               <option value="sem-ranking " selected="selected">Sem Ranking</option>
               <option value="ferro">Ferro</option>
               <option value="bronze">Bronze</option>
               <option value="prata">Prata</option>
               <option value="ouro">Ouro</option>
               <option value="platina">Platina</option>
+              <option value="esmeralda">Esmeralda</option>
               <option value="diamante">Diamante</option>
               <option value="mestre">Mestre</option>
               <option value="grao-mestre">Grão-Mestre</option>
@@ -186,6 +187,7 @@
 
   <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
   <script src="js/telas.js"></script>
+  <script src="js/changeImgMd10.js"></script>
 </body>
 
 </html>
