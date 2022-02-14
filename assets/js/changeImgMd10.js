@@ -52,7 +52,10 @@ function changeImg2() {
     let slc = document.getElementById("ligaatual2").value
    
     let igm = document.getElementById("emblem2")
- 
+    if (slc == "sem-ranking") {
+        igm.src = "imagens/Emblem_none.png"
+       
+    }
 
     if (slc == "ferro") {
         igm.src = "imagens/Emblem_Iron.png"
