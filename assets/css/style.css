@@ -220,11 +220,12 @@ outline: none;
   height: 200px;
   padding: 15px 20px;
   margin: 0 5px 20px;
-  border: 1px solid #fee500 ;
+  border: 1px solid #000000 ;
   border-radius: 5px;
   display: inline-block;
   vertical-align: top;
   text-decoration: none;
+  cursor: pointer;
 }
 .modal-box .modal-dialog .modal-content .modal-body .box-content:hover,
 .modal-box .modal-dialog .modal-content .modal-body .box-content:focus{
