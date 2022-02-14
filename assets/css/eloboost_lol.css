@@ -97,7 +97,7 @@ padding-bottom: 1rem;
     
  }
  
- 
+
 
 @media (max-width:992px) {
 .custom-toggler .navbar-toggler-icon.elo {
@@ -130,6 +130,10 @@ padding-bottom: 1rem;
 
   .md10{
     font-size: 40px;
+  }
+
+  .choice{
+   padding-top: 3rem;
   }
 }
 
