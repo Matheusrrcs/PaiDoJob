@@ -1,3 +1,14 @@
+const elo = {
+    ferro : 1,
+    bronze : 2,
+    prata : 3,
+    ouro : 4,
+    platina : 5,
+    diamante : 6,
+    mestre : 7,
+    graomestre : 8,
+    desafiante : 9
+}
 
 function changeImg() {
     let slc = document.getElementById("ligaatual").value
@@ -99,4 +110,28 @@ function changeImg2() {
        div.classList.add("invisible")
     }
     
+}
+
+function bigElo(){
+
+    let lga = document.getElementById("ligaatual").value
+     let lgd = document.getElementById("ligadesejada").value
+
+    let btn = document.getElementById("btnElo")
+  
+   let msg = document.getElementById("bigElo")
+   let value =  document.getElementById("valor")
+ 
+
+ if(elo[`${lga}`] >= elo[`${lgd}`]){
+ 
+    btn.classList.add("invisible")
+    value.classList.add("invisible")
+    msg.classList.remove("invisible")
+ }
+ else{
+    btn.classList.remove("invisible")
+    value.classList.remove("invisible")
+    msg.classList.add("invisible")
+ }
 }

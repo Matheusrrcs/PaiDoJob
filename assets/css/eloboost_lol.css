@@ -10,7 +10,7 @@ section#elo{
 }
 
 .TitlesElo{
-     padding: 4rem 4rem 2rem 4rem;
+     padding: 4rem 4rem 0 4rem;
  }
 .subElo{
  
@@ -97,7 +97,9 @@ padding-bottom: 1rem;
     
  }
  
-
+.bigElo{
+  background-color: #fee500;
+}
 
 @media (max-width:992px) {
 .custom-toggler .navbar-toggler-icon.elo {
