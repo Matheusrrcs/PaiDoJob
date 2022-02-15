@@ -22,39 +22,39 @@ function changeImg() {
 
     if (slc == "ferro") {
         igm.src = "imagens/Emblem_Iron.png"
-        div.classList.remove("invisible")
+        div.classList.remove("d-none")
     }
     if (slc == "bronze") {
         igm.src = "imagens/Emblem_Bronze.png"
-        div.classList.remove("invisible")
+        div.classList.remove("d-none")
     }
     if (slc == "prata") {
         igm.src = "imagens/Emblem_Silver.png"
-        div.classList.remove("invisible")
+        div.classList.remove("d-none")
     }
     if (slc == "ouro") {
         igm.src = "imagens/Emblem_Gold.png"
-        div.classList.remove("invisible")
+        div.classList.remove("d-none")
     }
     if (slc == "platina") {
         igm.src = "imagens/Emblem_Platinum.png"
-        div.classList.remove("invisible")
+        div.classList.remove("d-none")
     }
     if (slc == "diamante") {
         igm.src = "imagens/Emblem_Diamond.png"
-        div.classList.remove("invisible")
+        div.classList.remove("d-none")
     }
     if (slc == "mestre") {
         igm.src = "imagens/Emblem_Master.png"
-        div.classList.add("invisible")
+        div.classList.add("d-none")
     }
     if (slc == "grao-mestre") {
         igm.src = "imagens/Emblem_Grandmaster.png"
-        div.classList.add("invisible")
+        div.classList.add("d-none")
     }
     if (slc == "desafiante") {
         igm.src = "imagens/Emblem_Challenger.png"
-       div.classList.add("invisible")
+       div.classList.add("d-none")
     }
  
 }
@@ -71,39 +71,39 @@ function changeImg2() {
 
     if (slc == "ferro") {
         igm.src = "imagens/Emblem_Iron.png"
-        div.classList.remove("invisible")
+        div.classList.remove("d-none")
     }
     if (slc == "bronze") {
         igm.src = "imagens/Emblem_Bronze.png"
-        div.classList.remove("invisible")
+        div.classList.remove("d-none")
     }
     if (slc == "prata") {
         igm.src = "imagens/Emblem_Silver.png"
-        div.classList.remove("invisible")
+        div.classList.remove("d-none")
     }
     if (slc == "ouro") {
         igm.src = "imagens/Emblem_Gold.png"
-        div.classList.remove("invisible")
+        div.classList.remove("d-none")
     }
     if (slc == "platina") {
         igm.src = "imagens/Emblem_Platinum.png"
-        div.classList.remove("invisible")
+        div.classList.remove("d-none")
     }
     if (slc == "diamante") {
         igm.src = "imagens/Emblem_Diamond.png"
-        div.classList.remove("invisible")
+        div.classList.remove("d-none")
     }
     if (slc == "mestre") {
         igm.src = "imagens/Emblem_Master.png"
-        div.classList.add("invisible")
+        div.classList.add("d-none")
     }
     if (slc == "grao-mestre") {
         igm.src = "imagens/Emblem_Grandmaster.png"
-        div.classList.add("invisible")
+        div.classList.add("d-none")
     }
     if (slc == "desafiante") {
         igm.src = "imagens/Emblem_Challenger.png"
-       div.classList.add("invisible")
+       div.classList.add("d-none")
     }
  
 }
