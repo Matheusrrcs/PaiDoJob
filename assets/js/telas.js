@@ -12,7 +12,7 @@ document.querySelectorAll(".nav-link").forEach( function(button) {
 
 
 function modalChange2(){
-    console.log(value)
+  
     if(value == "MD10"){
         window.location.href ='md10_lol.html';
        
@@ -30,7 +30,7 @@ function modalChange2(){
 
  
 function modalChange3(){
-    console.log(value)
+    
     if(value == "MD10"){
         window.location.href ='md10_rift.html';
     }

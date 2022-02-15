@@ -65,7 +65,7 @@ function changeImg2() {
     let slc = document.getElementById("ligadesejada").value
    
     let igm = document.getElementById("emblem2")
-    console.log(igm)
+    
     let div = document.getElementById("boxDivisaoDesejada")
    
 
