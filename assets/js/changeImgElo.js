@@ -121,14 +121,14 @@ function bigElo(){
 
  if(elo[`${lga}`] >= elo[`${lgd}`]){
  
-    btn.classList.add("invisible")
-    value.classList.add("invisible")
-    msg.classList.remove("invisible")
+    btn.classList.add("d-none")
+    value.classList.add("d-none")
+    msg.classList.remove("d-none")
  }
  else{
-    btn.classList.remove("invisible")
-    value.classList.remove("invisible")
-    msg.classList.add("invisible")
+    btn.classList.remove("d-none")
+    value.classList.remove("d-none")
+    msg.classList.add("d-none")
  }
 
 
