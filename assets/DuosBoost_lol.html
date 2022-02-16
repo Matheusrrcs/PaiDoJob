@@ -101,6 +101,7 @@
       </div>
       <!-- <a class="btn btn-outline-light btn-lg" href="#team-area"> VEM PRO PAI</a>  -->
 
+     
       <div class="row">
         <div class="col-md-6 mb-3">
           <div class="form-group text-center">
@@ -109,8 +110,8 @@
           </div>
           <div class="form-group">
             <label for="ligaatual">Selecione a Liga Atual</label>
-            <select name="ligaatual" id="ligaatual" class="custom-select form-round " onchange="changeImg(), bigElo()">
-              <option value="ferro" >Ferro</option>
+            <select name="ligaatual" id="ligaatual" class="custom-select form-round " onchange="changeImg(), bigElo()"  >
+              <option value="ferro">Ferro</option>
               <option value="bronze">Bronze</option>
               <option value="prata" selected="selected">Prata</option>
               <option value="ouro">Ouro</option>
@@ -123,11 +124,11 @@
           </div>
           <div class="form-group " id="boxDivisaoAtual">
             <label for="divisaoatual">Selecione a Divisão Atual</label>
-            <select name="divisaoatual" id="divisaoatual" class="custom-select form-round ">
-              <option value="IV" selected="selected">IV</option>
-              <option value="III">III</option>
-              <option value="II">II</option>
-              <option value="I">I</option>
+            <select name="divisaoatual" id="divisaoatual" class="custom-select form-round " onchange="bigElo()">
+              <option value="4" selected="selected">IV</option>
+              <option value="3">III</option>
+              <option value="2">II</option>
+              <option value="1">I</option>
             </select>
           </div>
         </div>
@@ -138,7 +139,7 @@
           </div>
           <div class="form-group">
             <label for="ligadesejada">Selecione a Liga Desejada</label>
-            <select name="ligadesejada" id="ligadesejada" class="custom-select form-round "  onchange="changeImg2(), bigElo()">
+            <select name="ligadesejada" id="ligadesejada" class="custom-select form-round "  onchange="changeImg2(), bigElo()" >
               <option value="ferro">Ferro</option>
               <option value="bronze">Bronze</option>
               <option value="prata" >Prata</option>
@@ -152,11 +153,11 @@
           </div>
           <div class="form-group" id="boxDivisaoDesejada">
             <label for="divisaodesejada">Selecione a Divisão Desejada</label>
-            <select name="divisaodesejada" id="divisaodesejada" class="custom-select form-round  ">
-              <option value="IV"selected="selected">IV</option>
-              <option value="III" >III</option>
-              <option value="II">II</option>
-              <option value="I">I</option>
+            <select name="divisaodesejada" id="divisaodesejada" class="custom-select form-round  " onchange="bigElo()">
+              <option value="4"selected="selected">IV</option>
+              <option value="3" >III</option>
+              <option value="2">II</option>
+              <option value="1">I</option>
             </select>
           </div>
         </div>
@@ -218,7 +219,7 @@
 
   <footer class="bg-light text-center text-lg-start">
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgb(0, 0, 0); color: white;">
+    <div class="text-center p-3 footer">
       © 2022 Copyright:
       <a class="text-dark " href="https://mdbootstrap.com/">PAI DO JOB</a>
       <a class="text-dark p-2" href="https://mdbootstrap.com/">LICENÇA</a>

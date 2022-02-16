@@ -99,3 +99,5 @@ function changeImg2() {
     }
     
 }
+
+document.getElementById("valueMd10").innerHTML =' <small style="font-size: 20px;">POR:</small> R$ 75,00'

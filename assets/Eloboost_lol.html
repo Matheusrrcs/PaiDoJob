@@ -107,7 +107,7 @@
           </div>
           <div class="form-group">
             <label for="ligaatual">Selecione a Liga Atual</label>
-            <select name="ligaatual" id="ligaatual" class="custom-select form-round " onchange="changeImg(), bigElo()"  >
+            <select name="ligaatual" id="ligaatual" class="custom-select form-round " onchange="changeImg(), bigElo(), Eloprice()"  >
               <option value="ferro">Ferro</option>
               <option value="bronze">Bronze</option>
               <option value="prata" selected="selected">Prata</option>
@@ -121,11 +121,11 @@
           </div>
           <div class="form-group " id="boxDivisaoAtual">
             <label for="divisaoatual">Selecione a Divisão Atual</label>
-            <select name="divisaoatual" id="divisaoatual" class="custom-select form-round ">
-              <option value="IV" selected="selected">IV</option>
-              <option value="III">III</option>
-              <option value="II">II</option>
-              <option value="I">I</option>
+            <select name="divisaoatual" id="divisaoatual" class="custom-select form-round " onchange="bigElo(), Eloprice()">
+              <option value="4" selected="selected">IV</option>
+              <option value="3">III</option>
+              <option value="2">II</option>
+              <option value="1">I</option>
             </select>
           </div>
         </div>
@@ -136,7 +136,7 @@
           </div>
           <div class="form-group">
             <label for="ligadesejada">Selecione a Liga Desejada</label>
-            <select name="ligadesejada" id="ligadesejada" class="custom-select form-round "  onchange="changeImg2(), bigElo()" >
+            <select name="ligadesejada" id="ligadesejada" class="custom-select form-round "  onchange="changeImg2(), bigElo(),Eloprice()" >
               <option value="ferro">Ferro</option>
               <option value="bronze">Bronze</option>
               <option value="prata" >Prata</option>
@@ -150,11 +150,11 @@
           </div>
           <div class="form-group" id="boxDivisaoDesejada">
             <label for="divisaodesejada">Selecione a Divisão Desejada</label>
-            <select name="divisaodesejada" id="divisaodesejada" class="custom-select form-round  ">
-              <option value="IV"selected="selected">IV</option>
-              <option value="III" >III</option>
-              <option value="II">II</option>
-              <option value="I">I</option>
+            <select name="divisaodesejada" id="divisaodesejada" class="custom-select form-round  " onchange="bigElo(),Eloprice()">
+              <option value="4"selected="selected">IV</option>
+              <option value="3" >III</option>
+              <option value="2">II</option>
+              <option value="1">I</option>
             </select>
           </div>
         </div>
@@ -172,8 +172,8 @@
       </div>
   
     </div>
-      <p class="display-4 text-black text-uppercase valor" id="valor"> <small style="font-size: 20px;">POR:</small> R$ 20,00 
-      </p>
+      <p class="display-4 text-black text-uppercase valor" id="valor">
+        <small style="font-size: 20px;">POR:</small> R$ 00,00</p>
         <div class="contbtn elo " id="btnElo">
           <div class="center elo">
             <button class="btn elo">
@@ -214,7 +214,7 @@
   </a>
   <footer class="bg-light text-center text-lg-start">
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgb(0, 0, 0); color: white;">
+    <div class="text-center p-3 footer">
       © 2022 Copyright:
       <a class="text-dark " href="https://mdbootstrap.com/">PAI DO JOB</a>
       <a class="text-dark p-2" href="https://mdbootstrap.com/">LICENÇA</a>
