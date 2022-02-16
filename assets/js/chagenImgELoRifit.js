@@ -118,28 +118,28 @@ function bigElo() {
     let lgd = document.getElementById("ligadesejada").value
 
     let dva = document.getElementById("divisaoatual").value
-    let dvd = document.getElementById("divisaodesejada").value 
-    console.log(dva)
-    console.log(dvd)
+    let dvd = document.getElementById("divisaodesejada").value
+
     let btn = document.getElementById("btnElo")
 
     let msg = document.getElementById("bigElo")
     let value = document.getElementById("valor")
 
 
-    if (elo[`${lga}`] >  elo[`${lgd}`]) {
+    if (elo[`${lga}`] > elo[`${lgd}`]) {
 
         btn.classList.add("d-none")
         value.classList.add("d-none")
         msg.classList.remove("d-none")
     }
 
-    else if(elo[`${lga}`] == elo[`${lgd}`] && dva ==  dvd){
+    else if (elo[`${lga}`] == elo[`${lgd}`] && dva <= dvd ) {
         btn.classList.add("d-none")
         value.classList.add("d-none")
         msg.classList.remove("d-none")
     }
-    
+     
+
     else {
         btn.classList.remove("d-none")
         value.classList.remove("d-none")
@@ -147,4 +147,6 @@ function bigElo() {
     }
 
 
+
 }
+ 

@@ -1,3 +1,5 @@
+ 
+ 
 const elo = {
     ferro: 1,
     bronze: 2,
@@ -10,58 +12,7 @@ const elo = {
     desafiante: 9
 }
 
-const eloPrice = {
-    ferroIV: 0,
-    ferroIII: 10,
-    ferroII: 20,
-    ferroI: 30,
-    bronzeIV: 45,
-    bronzeIII: 60,
-    bronzeII: 75,
-    bronzeI: 90,
-    prataIV: 105,
-    prataIII: 120,
-    prataII: 135,
-    prataI: 150,
-    ouroIV: 170,
-    ouroIII: 190,
-    ouroII: 210,
-    ouroI: 230,
-    platinaIV: 260,
-    platinaIII: 290,
-    platinaII: 320,
-    platinaI: 350,
-    diamanteIV: 400,
-    diamanteIII: 460,
-    diamanteII: 540,
-    diamanteI: 660,
-    mestreIV: 860,
-    graomestreIV:1720,
-    desafianteIV:4270
-}
-
-function Eloprice() {
-    let lga = document.getElementById("ligaatual").value
-    let lgd = document.getElementById("ligadesejada").value
-
-    let dva = document.getElementById("divisaoatual")
-    let dvd = document.getElementById("divisaodesejada")
-
-
-    let resultadoFinal
-
-    let lgadva = lga + dva.options[dva.selectedIndex].text
-    let lgadvd = lgd + dvd.options[dvd.selectedIndex].text
-
-
-    resultadoFinal = eloPrice[`${lgadvd}`] - eloPrice[`${lgadva}`]
-
-    document.getElementById("valor").innerHTML = `<small style="font-size: 20px;">POR:</small> R$ ${resultadoFinal},00</p>`
-
-
-}
-
-
+ 
 function changeImg() {
     let slc = document.getElementById("ligaatual").value
 
@@ -108,7 +59,6 @@ function changeImg() {
     }
 
 }
-
 
 function changeImg2() {
 
@@ -157,6 +107,7 @@ function changeImg2() {
     }
 
 }
+
 function bigElo() {
 
     let lga = document.getElementById("ligaatual").value
@@ -178,16 +129,12 @@ function bigElo() {
         msg.classList.remove("d-none")
     }
 
-    else if (elo[`${lga}`] == elo[`${lgd}`] && dva == dvd) {
+    else if (elo[`${lga}`] == elo[`${lgd}`] && dva <= dvd ) {
         btn.classList.add("d-none")
         value.classList.add("d-none")
         msg.classList.remove("d-none")
     }
-    else if (dva < dvd) {
-        btn.classList.add("d-none")
-        value.classList.add("d-none")
-        msg.classList.remove("d-none")
-    }
+     
 
     else {
         btn.classList.remove("d-none")
