@@ -157,5 +157,13 @@ padding-bottom: 1rem;
     box-shadow: 2px 2px 3px #999;
     z-index: 100;
   }
+
+  .valor{
+    font-size: 2rem;
+  }
+
+  .page-content{
+    padding: 0;
+  }
 }
 

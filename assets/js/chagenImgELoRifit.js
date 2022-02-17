@@ -4,10 +4,11 @@ const elo = {
     prata : 3,
     ouro : 4,
     platina : 5,
-    diamante : 6,
-    mestre : 7,
-    graomestre : 8,
-    desafiante : 9
+    esmeralda:6,
+    diamante : 7,
+    mestre : 8,
+    graomestre : 9,
+    desafiante : 10
 }
 
 function changeImg() {
@@ -64,12 +65,12 @@ function bigElo() {
         msg.classList.remove("d-none")
     }
 
-    else if (elo[`${lga}`] == elo[`${lgd}`] && dva <= dvd ) {
+    else if (elo[`${lga}`] == elo[`${lgd}`] && dva <= dvd) {
         btn.classList.add("d-none")
         value.classList.add("d-none")
         msg.classList.remove("d-none")
     }
-     
+
 
     else {
         btn.classList.remove("d-none")
@@ -80,4 +81,3 @@ function bigElo() {
 
 
 }
- 

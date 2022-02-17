@@ -27,7 +27,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="modal-box">
-       <!-- Modal -->
+            <!-- Modal -->
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -35,24 +35,24 @@
                       aria-hidden="true">×</span></button>
                   <div class="modal-body">
                     <h3 class="title">ESCOLHA ONDE VOCÊ QUE SUBIR</h3>
-                    
-                    <a  class="box-content" onclick="modalChange2()">
+
+                    <a class="box-content" onclick="modalChange2()">
                       <div class="icon">
                         <img src="imagens/notPosition.png" alt="">
                       </div>
                       <h4 class="title">LEAGUE OF LEGENDS</h4>
-                       
+
                     </a>
-                    <a   class="box-content"  onclick="modalChange3()">
-                      
+                    <a class="box-content" onclick="modalChange3()">
+
                       <div class="icon">
-                      <img src="imagens/notPosition.png" alt="">
-                         
+                        <img src="imagens/notPosition.png" alt="">
+
                       </div>
                       <h4 class="title">WILD RIFT</h4>
-                      
+
                     </a>
-                  
+
                   </div>
                 </div>
               </div>
@@ -66,7 +66,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-round fixed-top py-2 py-lg-5 elo ">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src="imagens/logo.png" alt=""></a>
+        <a class="navbar-brand" href="index.html"><img src="imagens/logo.png" alt=""></a>
         <button class="navbar-toggler custom-toggler elo" type="button" data-toggle="collapse"
           data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
           aria-label="Toggle navigation">
@@ -76,7 +76,7 @@
         <div class="collapse navbar-collapse custom-collapse " id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto elo">
             <a class="nav-item nav-link  elo" href="index.html">INÍCIO </a>
-            <a class="nav-item nav-link  elo " href="#" data-toggle="modal" data-target="#myModal">ELO BOOST  </a>
+            <a class="nav-item nav-link  elo " href="#" data-toggle="modal" data-target="#myModal">ELO BOOST </a>
             <a class="nav-item nav-link elo" href="#" data-toggle="modal" data-target="#myModal">MD10</a>
             <a class="nav-item nav-link active elo" href="#" data-toggle="modal" data-target="#myModal">DUO BOOST</a>
             <a class="nav-item nav-link elo" href="#" data-toggle="modal" data-target="#myModal">COACH</a>
@@ -100,28 +100,31 @@
         Nós, parcelamos qualquer serviço em até 12x no cartão de crédito Através de Picpay ou MercadoPago
       </div>
       <!-- <a class="btn btn-outline-light btn-lg" href="#team-area"> VEM PRO PAI</a>  -->
-     
+
       <div class="row">
         <div class="col-md-6 mb-3">
           <div class="form-group text-center">
             <p><span class="badge badge-pill ">1</span> Selecione a Liga e Divisão atual</p>
-            <img src="imagens/prata" style="max-height: 200px" id="emblem">
+            <img src="imagens/prata.png" style="max-height: 200px" id="emblem">
           </div>
           <div class="form-group">
             <label for="ligaatual">Selecione a Liga Atual</label>
-            <select name="ligaatual" id="ligaatual" class="custom-select form-round " onchange="changeImg(), bigElo()"  >
+            <select name="ligaatual" id="ligaatual" class="custom-select form-round "
+              onchange="changeImg(), bigElo(),Eloprice()">
               <option value="ferro">Ferro</option>
               <option value="bronze">Bronze</option>
               <option value="prata" selected="selected">Prata</option>
               <option value="ouro">Ouro</option>
               <option value="platina">Platina</option>
+              <option value="esmeralda">Esmeralda</option>
               <option value="diamante">Diamante</option>
-   
+
             </select>
           </div>
           <div class="form-group " id="boxDivisaoAtual">
             <label for="divisaoatual">Selecione a Divisão Atual</label>
-            <select name="divisaoatual" id="divisaoatual" class="custom-select form-round " onchange="bigElo()">
+            <select name="divisaoatual" id="divisaoatual" class="custom-select form-round "
+              onchange="bigElo(),Eloprice()">
               <option value="4" selected="selected">IV</option>
               <option value="3">III</option>
               <option value="2">II</option>
@@ -132,26 +135,29 @@
         <div class="col-md-6 mb-3">
           <div class="form-group text-center">
             <p><span class="badge badge-pill ">2</span> Selecione a Liga e Divisão desejada</p>
-            <img src="imagens/ouro.png"   style="max-height: 200px" id="emblem2">
+            <img src="imagens/ouro.png" style="max-height: 200px" id="emblem2">
           </div>
           <div class="form-group">
             <label for="ligadesejada">Selecione a Liga Desejada</label>
-            <select name="ligadesejada" id="ligadesejada" class="custom-select form-round "  onchange="changeImg2(), bigElo()" >
+            <select name="ligadesejada" id="ligadesejada" class="custom-select form-round "
+              onchange="changeImg2(), bigElo(),Eloprice()">
               <option value="ferro">Ferro</option>
               <option value="bronze">Bronze</option>
-              <option value="prata" >Prata</option>
-              <option value="ouro"  selected="selected">Ouro</option>
-              <option value="platina" >Platina</option>
+              <option value="prata">Prata</option>
+              <option value="ouro" selected="selected">Ouro</option>
+              <option value="platina">Platina</option>
+              <option value="esmeralda">Esmeralda</option>
               <option value="diamante">Diamante</option>
               <option value="mestre">Mestre</option>
-       
+
             </select>
           </div>
           <div class="form-group" id="boxDivisaoDesejada">
             <label for="divisaodesejada">Selecione a Divisão Desejada</label>
-            <select name="divisaodesejada" id="divisaodesejada" class="custom-select form-round  " onchange="bigElo()">
-              <option value="4"selected="selected">IV</option>
-              <option value="3" >III</option>
+            <select name="divisaodesejada" id="divisaodesejada" class="custom-select form-round  "
+              onchange="bigElo(),Eloprice()">
+              <option value="4" selected="selected">IV</option>
+              <option value="3">III</option>
               <option value="2">II</option>
               <option value="1">I</option>
             </select>
@@ -163,54 +169,61 @@
 
 
     <div class="col-lg-12 d-flex flex-column align-items-center justify-content-center text-center " id="result">
-      <div class="d-none"  id="bigElo">
-        <div class="alert alert-danger alert-dismissible d-flex align-items-center " >
+      <div class="d-none" id="bigElo">
+        <div class="alert alert-danger alert-dismissible d-flex align-items-center ">
           <img src="https://img.icons8.com/color/28/000000/high-priority.png" class="pr-2">
-           Por favor, certifique-se de que o elo desejado é maior do que o elo inicial escolhido
+          Por favor, certifique-se de que o elo desejado é maior do que o elo inicial escolhido
           <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-      </div>
-  
-    </div>
-      <p class="display-4 text-black text-uppercase valor" id="valor"> <small style="font-size: 20px;">POR:</small> R$ 20,00 
-      </p>
-        <div class="contbtn elo " id="btnElo">
-          <div class="center elo">
-            <button class="btn elo">
-              <svg width="180px" height="60px" viewBox="0 0 180 60" class="border elo">
-                <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line elo" />
-                <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line elo" />
-              </svg>
-              <span>VEM PRO PAI</span>
-            </button>
-          </div>
         </div>
+
+      </div>
+      <p class="display-4 text-black text-uppercase valor" id="valor"> <small style="font-size: 20px;">POR:</small> R$
+        00,00
+      </p>
+      <div class="contbtn elo " id="btnElo">
+        <div class="center elo">
+          <button class="btn elo">
+            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border elo">
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line elo" />
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line elo" />
+            </svg>
+            <span>VEM PRO PAI</span>
+          </button>
+        </div>
+      </div>
     </div>
-    
- 
-    <div class="container"> 
-      <div class="page-content p-4 mt-5">
+
+
+    <div class="container">
+      <div class="page-content   mt-5">
         <h4> O PAI DO JOB</h4>
         <p>
-          Você poderá acompanhar as partidas ao vivo no nosso Discord, os boosters fazem transmissões ao vivo das partidas para você assistir ele subindo a sua conta!
+          Você poderá acompanhar as partidas ao vivo no nosso Discord, os boosters fazem transmissões ao vivo das
+          partidas para você assistir ele subindo a sua conta!
           Você aprenderá bastante com essa nova experiência!
         </p>
         <p>
-          O Pai do Job tem 6 anos de experiência e milhares de serviços de Elojob (eloboost), Duo boost e Coaching concluídos com sucesso, certificando a grande satisfação de nossos clientes.
+          O Pai do Job tem 6 anos de experiência e milhares de serviços de Elojob (eloboost), Duo boost e Coaching
+          concluídos com sucesso, certificando a grande satisfação de nossos clientes.
         </p>
         <h4>PORQUE ESCOLHER O PAI DO JOB?</h4>
         <p>
-          Temos os melhores boosters para concluir o seu serviço com agilidade, profissionalismo e um preço super barato, além disso damos sempre o melhor apoio aos nossos clientes, trabalhamos com mercado pago e com criptografia em nossos servidores, tudo isso para que você possa comprar e navegar com segurança. Buscamos sempre oferecer aos clientes um serviço de qualidade, seguro e com um suporte impecável. Nossa proposta é simples: Oferecer o melhor serviço pelo menor preço.
+          Temos os melhores boosters para concluir o seu serviço com agilidade, profissionalismo e um preço super
+          barato, além disso damos sempre o melhor apoio aos nossos clientes, trabalhamos com mercado pago e com
+          criptografia em nossos servidores, tudo isso para que você possa comprar e navegar com segurança. Buscamos
+          sempre oferecer aos clientes um serviço de qualidade, seguro e com um suporte impecável. Nossa proposta é
+          simples: Oferecer o melhor serviço pelo menor preço.
         </p>
-   
+
       </div>
     </div>
-      
+
   </section>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
-  <i class="fa fa-whatsapp my-float"></i>
-  </a>
+  <a href="http://web.whatsapp.com/send?1=pt_BR&amp;phone=5571987558100&amp;text=Vim%20pelo%20site,%20quero%20tirar%20uma%20d%C3%BAvida"  class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
 
   <footer class="bg-light text-center text-lg-start">
     <!-- Copyright -->
@@ -233,6 +246,8 @@
   <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
   <script src="js/telas.js"></script>
   <script src="js/chagenImgELoRifit.js"></script>
+  <script src="js/changePriceDuoBoost_rift.js
+  "></script>
 </body>
 
 </html>
