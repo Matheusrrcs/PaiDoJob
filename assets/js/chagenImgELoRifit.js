@@ -12,50 +12,18 @@ const elo = {
 
 function changeImg() {
     let slc = document.getElementById("ligaatual").value
-   
+
+
     let igm = document.getElementById("emblem")
     let div = document.getElementById("boxDivisaoAtual")
-   
 
-    if (slc == "ferro") {
-        igm.src = "imagens/Emblem_Iron.png"
-        div.classList.remove("d-none")
-    }
-    if (slc == "bronze") {
-        igm.src = "imagens/Emblem_Bronze.png"
-        div.classList.remove("d-none")
-    }
-    if (slc == "prata") {
-        igm.src = "imagens/Emblem_Silver.png"
-        div.classList.remove("d-none")
-    }
-    if (slc == "ouro") {
-        igm.src = "imagens/Emblem_Gold.png"
-        div.classList.remove("d-none")
-    }
-    if (slc == "platina") {
-        igm.src = "imagens/Emblem_Platinum.png"
-        div.classList.remove("d-none")
-    }
-    if (slc == "esmeralda") {
-        igm.src = "imagens/Wild_Rift_Emerald_rank.webp"
-        div.classList.remove("d-none")
-    }
-    if (slc == "diamante") {
-        igm.src = "imagens/Emblem_Diamond.png"
-        div.classList.remove("d-none")
-    }
-    if (slc == "mestre") {
-        igm.src = "imagens/Emblem_Master.png"
-        div.classList.add("d-none")
-    }
-    if (slc == "grao-mestre") {
-        igm.src = "imagens/Emblem_Grandmaster.png"
-        div.classList.add("d-none")
-    }
-    if (slc == "desafiante") {
-        igm.src = "imagens/Emblem_Challenger.png"
-       div.classList.add("d-none")
+
+    igm.src = `imagens/${slc}.png`
+    
+    if (slc == "mestre" || slc == "graomestre" || slc == "desafiante"){
+        div.classList.add("d-none")}
+    else{
+    div.classList.remove("d-none")
     }
     
 }
@@ -63,53 +31,16 @@ function changeImg() {
 
 function changeImg2() {
     let slc = document.getElementById("ligadesejada").value
-   
     let igm = document.getElementById("emblem2")
-    
     let div = document.getElementById("boxDivisaoDesejada")
-   
-
-    if (slc == "ferro") {
-        igm.src = "imagens/Emblem_Iron.png"
-        div.classList.remove("d-none")
-    }
-    if (slc == "bronze") {
-        igm.src = "imagens/Emblem_Bronze.png"
-        div.classList.remove("d-none")
-    }
-    if (slc == "prata") {
-        igm.src = "imagens/Emblem_Silver.png"
-        div.classList.remove("d-none")
-    }
-    if (slc == "ouro") {
-        igm.src = "imagens/Emblem_Gold.png"
-        div.classList.remove("d-none")
-    }
-    if (slc == "platina") {
-        igm.src = "imagens/Emblem_Platinum.png"
-        div.classList.remove("d-none")
-    }
-    if (slc == "esmeralda") {
-        igm.src = "imagens/Wild_Rift_Emerald_rank.webp"
-        div.classList.remove("d-none")
-    }
-    if (slc == "diamante") {
-        igm.src = "imagens/Emblem_Diamond.png"
-        div.classList.remove("d-none")
-    }
-    if (slc == "mestre") {
-        igm.src = "imagens/Emblem_Master.png"
-        div.classList.add("d-none")
-    }
-    if (slc == "grao-mestre") {
-        igm.src = "imagens/Emblem_Grandmaster.png"
-        div.classList.add("d-none")
-    }
-    if (slc == "desafiante") {
-        igm.src = "imagens/Emblem_Challenger.png"
-       div.classList.add("d-none")
-    }
+ 
+    igm.src = `imagens/${slc}.png`
     
+    if (slc == "mestre" || slc == "graomestre" || slc == "desafiante"){
+        div.classList.add("d-none")}
+    else{
+    div.classList.remove("d-none")
+    }
 }
 
 function bigElo() {

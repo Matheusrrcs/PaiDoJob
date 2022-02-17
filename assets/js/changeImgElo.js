@@ -32,11 +32,8 @@ function changeImg() {
 }
 
 function changeImg2() {
-
     let slc = document.getElementById("ligadesejada").value
-
     let igm = document.getElementById("emblem2")
-
     let div = document.getElementById("boxDivisaoDesejada")
  
     igm.src = `imagens/${slc}.png`
@@ -46,7 +43,6 @@ function changeImg2() {
     else{
     div.classList.remove("d-none")
     }
-
 }
 
 function bigElo() {
