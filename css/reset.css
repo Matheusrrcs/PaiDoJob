@@ -4,15 +4,16 @@
     box-sizing: border-box;
     font-family: 'RobotoMono';
 }
- #index{
-    overflow: hidden;
-}
+
 
 html,body{
     height: 100%;
     overflow-x: hidden;
 }
 
+#index{
+    overflow: hidden;
+}
 
 body#main{
   

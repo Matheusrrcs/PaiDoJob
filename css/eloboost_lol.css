@@ -62,6 +62,9 @@ padding-bottom: 1rem;
    color: rgb(0, 0, 0);
  }
  
+ hr{
+  background-color: #50504e23;
+ }
  svg.elo{
    position: absolute;
    left: 0;
@@ -101,7 +104,7 @@ padding-bottom: 1rem;
   background-color: #fee500;
 }
  
-.footer{
+footer{
   background-color: rgb(0, 0, 0); 
   color: white;
   font-size: 15px;
@@ -164,6 +167,12 @@ padding-bottom: 1rem;
 
   .page-content{
     padding: 0;
+  }
+
+.termo{
+     padding-top:4rem;
+     font-size: 2rem;
+     
   }
 }
 
