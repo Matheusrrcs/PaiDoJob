@@ -1,5 +1,5 @@
- 
- 
+
+
 const elo = {
     ferro: 1,
     bronze: 2,
@@ -12,7 +12,7 @@ const elo = {
     desafiante: 9
 }
 
- 
+
 function changeImg() {
     let slc = document.getElementById("ligaatual").value
 
@@ -21,41 +21,12 @@ function changeImg() {
     let div = document.getElementById("boxDivisaoAtual")
 
 
-    if (slc == "ferro") {
-        igm.src = "imagens/Emblem_Iron.png"
-        div.classList.remove("d-none")
-    }
-     if (slc == "bronze") {
-        igm.src = "imagens/Emblem_Bronze.png"
-        div.classList.remove("d-none")
-    }
-    if (slc == "prata") {
-        igm.src = "imagens/Emblem_Silver.png"
-        div.classList.remove("d-none")
-    }
-    if (slc == "ouro") {
-        igm.src = "imagens/Emblem_Gold.png"
-        div.classList.remove("d-none")
-    }
-    if (slc == "platina") {
-        igm.src = "imagens/Emblem_Platinum.png"
-        div.classList.remove("d-none")
-    }
-      if (slc == "diamante") {
-        igm.src = "imagens/Emblem_Diamond.png"
-        div.classList.remove("d-none")
-    }
-    if (slc == "mestre") {
-        igm.src = "imagens/Emblem_Master.png"
-        div.classList.add("d-none")
-    }
-    if (slc == "graomestre") {
-        igm.src = "imagens/Emblem_Grandmaster.png"
-        div.classList.add("d-none")
-    }
-    if (slc == "desafiante") {
-        igm.src = "imagens/Emblem_Challenger.png"
-        div.classList.add("d-none")
+    igm.src = `imagens/${slc}.png`
+    
+    if (slc == "mestre" || slc == "graomestre" || slc == "desafiante"){
+        div.classList.add("d-none")}
+    else{
+    div.classList.remove("d-none")
     }
 
 }
@@ -67,43 +38,13 @@ function changeImg2() {
     let igm = document.getElementById("emblem2")
 
     let div = document.getElementById("boxDivisaoDesejada")
-
-
-    if (slc == "ferro") {
-        igm.src = "imagens/Emblem_Iron.png"
-        div.classList.remove("d-none")
-    }
-      if (slc == "bronze") {
-        igm.src = "imagens/Emblem_Bronze.png"
-        div.classList.remove("d-none")
-    }
-    if (slc == "prata") {
-        igm.src = "imagens/Emblem_Silver.png"
-        div.classList.remove("d-none")
-    }
-    if (slc == "ouro") {
-        igm.src = "imagens/Emblem_Gold.png"
-        div.classList.remove("d-none")
-    }
-     if (slc == "platina") {
-        igm.src = "imagens/Emblem_Platinum.png"
-        div.classList.remove("d-none")
-    }
-     if (slc == "diamante") {
-        igm.src = "imagens/Emblem_Diamond.png"
-        div.classList.remove("d-none")
-    }
-     if (slc == "mestre") {
-        igm.src = "imagens/Emblem_Master.png"
-        div.classList.add("d-none")
-    }
-      if (slc == "graomestre") {
-        igm.src = "imagens/Emblem_Grandmaster.png"
-        div.classList.add("d-none")
-    }
-     if (slc == "desafiante") {
-        igm.src = "imagens/Emblem_Challenger.png"
-        div.classList.add("d-none")
+ 
+    igm.src = `imagens/${slc}.png`
+    
+    if (slc == "mestre" || slc == "graomestre" || slc == "desafiante"){
+        div.classList.add("d-none")}
+    else{
+    div.classList.remove("d-none")
     }
 
 }
@@ -129,12 +70,12 @@ function bigElo() {
         msg.classList.remove("d-none")
     }
 
-    else if (elo[`${lga}`] == elo[`${lgd}`] && dva <= dvd ) {
+    else if (elo[`${lga}`] == elo[`${lgd}`] && dva <= dvd) {
         btn.classList.add("d-none")
         value.classList.add("d-none")
         msg.classList.remove("d-none")
     }
-     
+
 
     else {
         btn.classList.remove("d-none")
