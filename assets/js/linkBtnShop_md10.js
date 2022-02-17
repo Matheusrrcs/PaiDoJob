@@ -1,12 +1,7 @@
 function whatsapp() {
-
-    let typeT = document.getElementById("title").textContent.toLocaleLowerCase().trim()
-
+ 
     let lga = document.getElementById("ligaatual").value
-
-    let lgd = document.getElementById("ligadesejada").value
-    let dva = document.getElementById("divisaoatual")
-    let dvd = document.getElementById("divisaodesejada")
+ 
 
 
     let value = document.getElementById("valor").textContent
@@ -26,10 +21,9 @@ function whatsapp() {
     }
 
 
-    text = 'Olá,%20estou%20no%20site,%20e%20quero%20' + typeT + '.%20Estou%20no%20' + lga + '%20' + dva.options[dva.selectedIndex].text + '%20e%20quero%20chegar%20no%20' + lgd + '%20' + dvd.options[dvd.selectedIndex].text + ',  ' + value + "."
-
-
-
+    var text = 'Olá,%20estou%20no%20site%20e%20quero%20MD10%20do%20elo%20'+lga+'%20'+value
+    
+ 
     var url = `https://${type}.whatsapp.com/send?1=pt_BR&phone=55718755-8100&text=`.concat(text);
 
     window.open(url);

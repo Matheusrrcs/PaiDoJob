@@ -9,4 +9,4 @@ function changeImg() {
     
 }
 
-document.getElementById("valueMd10").innerHTML =' <small style="font-size: 20px;">POR:</small> R$ 75,00'
+document.getElementById("valor").innerHTML =' <small style="font-size: 20px;">POR:</small> R$ 75,00'
