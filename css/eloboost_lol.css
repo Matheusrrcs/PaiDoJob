@@ -106,8 +106,17 @@ padding-bottom: 1rem;
  
 footer{
   background-color: rgb(0, 0, 0); 
-  color: white;
+  color: rgba(255, 255, 255, 0.719);
   font-size: 15px;
+}
+
+footer a{
+  color: white;
+}
+
+footer a:hover{
+  text-decoration:none;
+  color:white;
 }
 
 @media (max-width:992px) {
