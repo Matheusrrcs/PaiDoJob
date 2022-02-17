@@ -44,6 +44,3 @@ function modalChange3(){
     window.location.href ='coach_rift.html'
    }
  }
-
-
- 
