@@ -19,7 +19,7 @@ body#main{
     background-position: center;
     height: 100%;
     width: 100%;
-    
+    overflow: hidden;
 }
 body#elojob{
   
@@ -53,4 +53,5 @@ body#main::after {
     left: 0;
     background: #000;
     opacity: .7;
+    overflow: hidden;
   }
