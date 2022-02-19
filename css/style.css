@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+ 
 }
 
  
@@ -121,6 +121,73 @@ svg {
   font-weight: bold;
    
 }
+ 
+ 
+.social-menu {
+  padding-left: 0;
+  list-style: none;
+}
+ 
+.iconsIndex:hover i.bi-whatsapp{
+ color:#25d366;
+}
+
+.iconsIndex:hover i.bi-instagram{
+  color: #d6249f;
+  
+}
+
+.iconsIndex:hover{
+  text-decoration:none;
+ 
+}
+ 
+ 
+
+.social-menu--landing li {
+  margin: 1.125rem 3rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+.social-menu li {
+  display: inline-block;
+}
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ 
+.social-menu--landing li a {
+  position: relative;
+  display: block;
+  padding-left: 2.875rem;
+  font-size: 1.625rem;
+  font-weight: 700;
+  letter-spacing: -.03em;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: left;
+  color: #fff;
+}
+ 
+.social-menu--landing li a i {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+ 
+.social-menu--landing .link-subtitle {
+  display: block;
+  font-size: .75rem;
+  font-weight: 100;
+}
+ 
 .nav-item.nav-link{
   color:rgb(172, 170, 170);
 }
@@ -312,6 +379,16 @@ outline: none;
   #title{
    font-size:3rem;
   }
+
+.modal-box .modal-dialog .modal-content .modal-body{
+ padding: 30px 20px 15px !important; 
+ background: url(../imagens/bgkModal.jpg);
+  
+ background-size: cover;
+ background-repeat: no-repeat;
+  
+}
+
   #navbarNavAltMarkup{
     background-color: rgb(255, 255, 255);
   }
@@ -330,6 +407,12 @@ outline: none;
    .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
+
+  .social-menu--landing li#liTwo {
+ 
+    margin-top: 1rem;
+}
+
   
   .custom-toggler.navbar-toggler {
     border:1px solid rgb(255, 255, 255);

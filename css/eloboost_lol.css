@@ -62,9 +62,7 @@ padding-bottom: 1rem;
    color: rgb(0, 0, 0);
  }
  
- hr{
-  background-color: #50504e23;
- }
+ 
  svg.elo{
    position: absolute;
    left: 0;
