@@ -14,17 +14,17 @@ document.querySelectorAll(".nav-link").forEach( function(button) {
 function modalChange2(){
   
     if(value == "MD10"){
-        window.location.href ='md10_lol.html';
+        window.location.href ='md10_lol';
        
     }
     else if(value.trim() == "ELO BOOST"){
-        window.location.href ='Eloboost_lol.html';
+        window.location.href ='Eloboost_lol';
     }
     else if(value == "DUO BOOST"){
-        window.location.href ='DuosBoost_lol.html'
+        window.location.href ='DuosBoost_lol'
     }
    else if(value=="COACH"){
-    window.location.href ='coach_lol.html'
+    window.location.href ='coach_lol'
    }
  }
 
@@ -32,15 +32,15 @@ function modalChange2(){
 function modalChange3(){
     
     if(value == "MD10"){
-        window.location.href ='md10_rift.html';
+        window.location.href ='md10_rift';
     }
     else if(value.trim() == "ELO BOOST"){
-        window.location.href ='Eloboost_rift.html';
+        window.location.href ='Eloboost_rift';
     }
     else if(value == "DUO BOOST"){
-        window.location.href ='DuosBoost_rift.html'
+        window.location.href ='DuosBoost_rift'
     }
    else if(value=="COACH"){
-    window.location.href ='coach_rift.html'
+    window.location.href ='coach_rift'
    }
  }
