@@ -7,7 +7,7 @@ function whatsapp() {
     let lgd = document.getElementById("ligadesejada").value
     let dva = document.getElementById("divisaoatual")
     let dvd = document.getElementById("divisaodesejada")
-
+    let ch = document.getElementById("choice").textContent
 
     let value = document.getElementById("valor").textContent
     var text
@@ -26,7 +26,7 @@ function whatsapp() {
     }
 
 
-    text = 'Olá,%20estou%20no%20site,%20e%20quero%20' + typeT + '.%20Estou%20no%20' + lga + '%20' + dva.options[dva.selectedIndex].text + '%20e%20quero%20chegar%20no%20' + lgd + '%20' + dvd.options[dvd.selectedIndex].text + ',  ' + value + "."
+    text = 'Olá,%20estou%20no%20site,%20e%20quero%20' + typeT + '%20para%20' + ch+ '.%20Estou%20no%20' + lga + '%20' + dva.options[dva.selectedIndex].text + '%20e%20quero%20chegar%20no%20' + lgd + '%20' + dvd.options[dvd.selectedIndex].text + ',  ' + value + "."
 
 
 
