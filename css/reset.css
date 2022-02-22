@@ -1,3 +1,4 @@
+/* Configurações globais  */
 *{
     margin:0;
     padding: 0;
@@ -5,17 +6,14 @@
  
 }
 
-
 html,body{
     height: 100%;
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
 }
+  
 
-#index{
-    overflow: hidden;
-}
-
+/* estilo do index*/
 body#main{
   
     background: url(../imagens/bgk.jpg);
@@ -26,27 +24,6 @@ body#main{
     width: 100%;
    overflow: hidden;
 }
-body#elojob{
-  
-    background: url(../imagens/bkgElo.png);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    
-}
-body#elojob::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    background: rgb(255, 255, 255);
-    opacity: .7;
-  }
 
 body#main::after {
     content: "";
@@ -60,3 +37,28 @@ body#main::after {
     opacity: .7;
     
   }
+
+/* estilo do body da parte de elo */
+body#elojob{
+  
+    background: url(../imagens/bkgElo.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    
+}
+
+body#elojob::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: rgb(255, 255, 255);
+    opacity: .7;
+  }
+
