@@ -331,7 +331,9 @@
     z-index:100;
   }
 
-
+.float:hover{
+  color: #ffffff9a;
+}
   /* footer */
   .floatFooterWhats{
     background-color:#25d366;
