@@ -22,12 +22,6 @@ padding-bottom: 1rem;
     border: none;
     border-bottom: 1px solid black;
 }
-
-.badge{
-  background-color: black;
-  color: white;
-}
-
  
 
 /* btn */
@@ -102,6 +96,28 @@ padding-bottom: 1rem;
   background-color: #fee500;
 }
  
+#valor{
+  margin-bottom: 0;
+}
+#valor small{
+  font-size: 20px;
+ 
+}
+
+#valorAntigo small{
+  font-size: 15px;
+}
+#valorAntigo  {
+  font-size: 20px;
+  text-decoration: line-through;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+
+
+
+
 footer{
   background-color: rgb(0, 0, 0); 
   color: rgb(255, 255, 255);

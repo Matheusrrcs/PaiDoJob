@@ -133,11 +133,22 @@
     </div>
 
     <div class="col-lg-12 d-flex flex-column align-items-center justify-content-center text-center " id="result">
-      <p class="display-4 text-black text-uppercase valor" id="valor"> <small style="font-size: 20px;">POR:</small> R$ 00,00
+      <div class="d-none" id="bigElo">
+        <div class="alert alert-danger alert-dismissible d-flex align-items-center ">
+          <img src="https://img.icons8.com/color/28/000000/high-priority.png" class="pr-2">
+          Por favor, certifique-se de que o elo desejado é maior do que o elo inicial escolhido
+        </div>
+      </div>
+      <p class="display-4 text-black text-uppercase valor" id="valorAntigo">
+        <small>DE:</small> R$ 00,00
       </p>
-      
+      <p class="display-4 text-black text-uppercase valor" id="valor">
+        <small>POR:</small> R$ 00,00
+      </p>
 
-      <div class="contbtn elo ">
+      <h1 class="text-dark" id="desconto" style="margin: 0; font-size: 18px;">20% de desconto com o cupom <span class="badge badge-warning"><i class="fas fa-tag mr-2"></i>PAI20</span> + início imediato</h1>
+
+      <div class="contbtn elo " id="btnElo">
         <div class="center elo">
           <button class="btn elo" onclick="whatsapp()">
             <svg width="180px" height="60px" viewBox="0 0 180 60" class="border elo">
@@ -327,6 +338,7 @@
   <script src="js/telas.js"></script>
   <script src="js/cahangePriceCoach.js"></script>
   <script src="js/linkBtnShop_coach.js"></script>
+  <script src="https://kit.fontawesome.com/8e4ad95b91.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

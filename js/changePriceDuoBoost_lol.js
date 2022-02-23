@@ -1,7 +1,4 @@
  
-document.getElementById("valor").innerHTML = `<small style="font-size: 20px;">POR:</small> R$ 105,00</p>`
- 
-
 const eloPrice = {
     ferroIV: 0,
     ferroIII: 15,
@@ -30,6 +27,12 @@ const eloPrice = {
     mestreIV: 1095,
  
 }
+const desconto = 20
+
+document.getElementById("valor").innerHTML = `<small >POR:</small>  ${moedaBrasil(eloPrice.ouroIV - eloPrice.prataIV)} </p>`
+document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil((desconto/100 + 1) * (eloPrice.ouroIV - eloPrice.prataIV))}</p>`
+ 
+ 
 
 function Eloprice() {
     let lga = document.getElementById("ligaatual").value
@@ -40,12 +43,26 @@ function Eloprice() {
 
 
     let resultadoFinal
+    let descontoFinal 
 
     let lgadva = lga + dva.options[dva.selectedIndex].text
     let lgadvd = lgd + dvd.options[dvd.selectedIndex].text
  
     resultadoFinal = eloPrice[`${lgadvd}`] - eloPrice[`${lgadva}`]
+     descontoFinal = ( desconto/100 + 1) * resultadoFinal
+    
 
-    document.getElementById("valor").innerHTML = `<small style="font-size: 20px;">POR:</small> R$ ${resultadoFinal},00</p>`
+     document.getElementById("valor").innerHTML = `<small >POR:</small> ${moedaBrasil(resultadoFinal)} </p>`
+     document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil(descontoFinal)}<p>`
+ 
+}
 
+
+function moedaBrasil(valor){
+   
+	var valor  
+	var valorFormatado = valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+ 
+
+    return valorFormatado
 }

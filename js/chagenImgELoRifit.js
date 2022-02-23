@@ -43,7 +43,6 @@ function changeImg2() {
     div.classList.remove("d-none")
     }
 }
-
 function bigElo() {
 
     let lga = document.getElementById("ligaatual").value
@@ -56,18 +55,24 @@ function bigElo() {
 
     let msg = document.getElementById("bigElo")
     let value = document.getElementById("valor")
+    let desconto = document.getElementById("desconto")
+    let valorAntigo = document.getElementById("valorAntigo")
 
 
     if (elo[`${lga}`] > elo[`${lgd}`]) {
 
         btn.classList.add("d-none")
         value.classList.add("d-none")
+        valorAntigo.classList.add("d-none")
+        desconto.classList.add("d-none")
         msg.classList.remove("d-none")
     }
 
     else if (elo[`${lga}`] == elo[`${lgd}`] && dva <= dvd) {
         btn.classList.add("d-none")
         value.classList.add("d-none")
+        valorAntigo.classList.add("d-none")
+        desconto.classList.add("d-none")
         msg.classList.remove("d-none")
     }
 
@@ -75,6 +80,8 @@ function bigElo() {
     else {
         btn.classList.remove("d-none")
         value.classList.remove("d-none")
+        valorAntigo.classList.remove("d-none")
+        desconto.classList.remove("d-none")
         msg.classList.add("d-none")
     }
 
