@@ -1,1 +1,75 @@
-const eloPrice={ferroIV:0,ferroIII:18,ferroII:36,ferroI:54,bronzeIV:74,bronzeIII:94,bronzeII:114,bronzeI:134,prataIV:159,prataIII:184,prataII:209,prataI:234,ouroIV:246,ouroIII:294,ouroII:324,ouroI:354,platinaIV:394,platinaIII:434,platinaII:474,platinaI:514,esmeraldaIV:554,esmeraldaIII:624,esmeraldaII:714,esmeraldaI:814,diamanteIV:934,diamanteIII:1074,diamanteII:1234,diamanteI:1414,mestreIV:1634,graomestreIV:2384,desafianteIV:3784},desconto=20;function Eloprice(){let e,a,I=document.getElementById("ligaatual").value,o=document.getElementById("ligadesejada").value,t=document.getElementById("divisaoatual"),l=document.getElementById("divisaodesejada"),r=I+t.options[t.selectedIndex].text,n=o+l.options[l.selectedIndex].text;e=eloPrice[`${n}`]-eloPrice[`${r}`],a=(desconto/100+1)*e,document.getElementById("valor").innerHTML=`<small >POR:</small> ${moedaBrasil(e)} </p>`,document.getElementById("valorAntigo").innerHTML=`<small >de:</small>  ${moedaBrasil(a)}<p>`}function moedaBrasil(e){return e.toLocaleString("pt-BR",{style:"currency",currency:"BRL"})}document.getElementById("valor").innerHTML=`<small >POR:</small>  ${moedaBrasil(eloPrice.ouroIV-eloPrice.prataIV)}</p>`,document.getElementById("valorAntigo").innerHTML=`<small >de:</small>  ${moedaBrasil((desconto/100+1)*(eloPrice.ouroIV-eloPrice.prataIV))}</p>`;
+ 
+const eloPrice = {
+    ferroIV: 0,
+    ferroIII: 18,
+    ferroII: 36,
+    ferroI: 54,
+    bronzeIV: 74,
+    bronzeIII: 94,
+    bronzeII: 114,
+    bronzeI: 134,
+    prataIV: 159,
+    prataIII: 184,
+    prataII: 209,
+    prataI: 234,
+    ouroIV: 246,
+    ouroIII: 294,
+    ouroII: 324,
+    ouroI: 354,
+    platinaIV: 394,
+    platinaIII: 434,
+    platinaII: 474,
+    platinaI: 514,
+    esmeraldaIV:554,
+    esmeraldaIII:624,
+    esmeraldaII:714,
+    esmeraldaI:814,
+    diamanteIV:934,
+    diamanteIII: 1074,
+    diamanteII: 1234,
+    diamanteI:1414,
+    mestreIV: 1634,
+    graomestreIV: 2384,
+    desafianteIV: 3784
+ 
+}
+const desconto = 20
+
+document.getElementById("valor").innerHTML = `<small >POR:</small>  ${moedaBrasil(eloPrice.ouroIV - eloPrice.prataIV)}</p>`
+ 
+document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil((desconto/100 + 1) * (eloPrice.ouroIV - eloPrice.prataIV))}</p>`
+ 
+ 
+
+function Eloprice() {
+    let lga = document.getElementById("ligaatual").value
+    let lgd = document.getElementById("ligadesejada").value
+
+    let dva = document.getElementById("divisaoatual")
+    let dvd = document.getElementById("divisaodesejada")
+
+
+    let resultadoFinal
+    let descontoFinal 
+
+    let lgadva = lga + dva.options[dva.selectedIndex].text
+    let lgadvd = lgd + dvd.options[dvd.selectedIndex].text
+ 
+    resultadoFinal = eloPrice[`${lgadvd}`] - eloPrice[`${lgadva}`]
+     descontoFinal = ( desconto/100 + 1) * resultadoFinal
+    
+
+     document.getElementById("valor").innerHTML = `<small >POR:</small> ${moedaBrasil(resultadoFinal)} </p>`
+     document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil(descontoFinal)}<p>`
+ 
+}
+
+
+function moedaBrasil(valor){
+   
+	var valor  
+	var valorFormatado = valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+ 
+
+    return valorFormatado
+}
