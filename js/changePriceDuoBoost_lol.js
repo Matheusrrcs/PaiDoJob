@@ -25,6 +25,9 @@ const eloPrice = {
     diamanteII: 745,
     diamanteI: 895,
     mestreIV: 1095,
+    mestreIII: 1095,
+    mestreII: 1095,
+    mestreI: 1095
 
 }
 const desconto = 20
@@ -48,11 +51,10 @@ function Eloprice() {
     let lgadva = lga + dva.options[dva.selectedIndex].text
     let lgadvd = lgd + dvd.options[dvd.selectedIndex].text
 
-    do {
+ 
         resultadoFinal = eloPrice[`${lgadvd}`] - eloPrice[`${lgadva}`]
         descontoFinal = (desconto / 100 + 1) * resultadoFinal
-    } while (resultadoFinal == NaN || descontoFinal == NaN)
-
+  
 
     document.getElementById("valor").innerHTML = `<small >POR:</small> ${moedaBrasil(resultadoFinal)} </p>`
     document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil(descontoFinal)}<p>`

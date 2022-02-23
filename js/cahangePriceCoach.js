@@ -20,11 +20,10 @@ function Eloprice() {
 
     let resultadoFinal
 
-    do {
+    
         resultadoFinal = coachPrice[`${lga}`]
         descontoFinal = (desconto / 100 + 1) * resultadoFinal
-    } while (resultadoFinal == NaN || descontoFinal == NaN)
-    
+  
     document.getElementById("valor").innerHTML = `<small style="font-size: 20px;">POR:</small> R$ ${resultadoFinal},00</p>`
     document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil(descontoFinal)}</p>`
 
