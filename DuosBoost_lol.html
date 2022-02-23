@@ -121,7 +121,7 @@
           </div>
           <div class="form-group">
             <label for="ligaatual">Selecione a Liga Atual</label>
-            <select name="ligaatual" id="ligaatual" class="custom-select form-round " onchange="changeImg(), bigElo()"  >
+            <select name="ligaatual" id="ligaatual" class="custom-select form-round " onchange="changeImg(), bigElo(),Eloprice()"  >
               <option value="ferro">Ferro</option>
               <option value="bronze">Bronze</option>
               <option value="prata" selected="selected">Prata</option>
@@ -133,7 +133,7 @@
           </div>
           <div class="form-group " id="boxDivisaoAtual">
             <label for="divisaoatual">Selecione a Divisão Atual</label>
-            <select name="divisaoatual" id="divisaoatual" class="custom-select form-round " onchange="bigElo()">
+            <select name="divisaoatual" id="divisaoatual" class="custom-select form-round " onchange="bigElo(),Eloprice()">
               <option value="4" selected="selected">IV</option>
               <option value="3">III</option>
               <option value="2">II</option>
