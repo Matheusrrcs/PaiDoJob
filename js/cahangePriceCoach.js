@@ -7,8 +7,9 @@ const coachPrice = {
 }
 
 const desconto = 20
+const descontoP = 10
 
-document.getElementById("valor").innerHTML = `<small >POR:</small>  ${moedaBrasil(coachPrice.cinco)} </p>`
+document.getElementById("valor").innerHTML = `<small >POR:</small>  ${moedaBrasil((1 - descontoP / 100) * coachPrice.cinco)} </p>`
 
 document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil((desconto / 100 + 1) * coachPrice.cinco)}</p>`
 
@@ -19,12 +20,14 @@ function Eloprice() {
 
 
     let resultadoFinal
+    let descontoPincipal
 
+    resultadoFinal = coachPrice[`${lga}`]
+    descontoPincipal = (1 - descontoP / 100) * resultadoFinal
+    descontoFinal = (desconto / 100 + 1) * resultadoFinal
     
-        resultadoFinal = coachPrice[`${lga}`]
-        descontoFinal = (desconto / 100 + 1) * resultadoFinal
-  
-    document.getElementById("valor").innerHTML = `<small style="font-size: 20px;">POR:</small> R$ ${resultadoFinal},00</p>`
+
+    document.getElementById("valor").innerHTML = `<small style="font-size: 20px;">POR:</small> R$ ${ descontoPincipal},00</p>`
     document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil(descontoFinal)}</p>`
 
 }

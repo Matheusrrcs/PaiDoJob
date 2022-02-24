@@ -31,8 +31,10 @@ const eloPrice = {
 
 }
 const desconto = 20
+const descontoP = 10
 
-document.getElementById("valor").innerHTML = `<small >POR:</small>  ${moedaBrasil(eloPrice.ouroIV - eloPrice.prataIV)} </p>`
+
+document.getElementById("valor").innerHTML = `<small >POR:</small>  ${moedaBrasil((1 - descontoP / 100) * (eloPrice.ouroIV - eloPrice.prataIV))} </p>`
 document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil((desconto / 100 + 1) * (eloPrice.ouroIV - eloPrice.prataIV))}</p>`
 
 
@@ -47,16 +49,18 @@ function Eloprice() {
 
     let resultadoFinal
     let descontoFinal
+    let descontoPincipal
 
     let lgadva = lga + dva.options[dva.selectedIndex].text
     let lgadvd = lgd + dvd.options[dvd.selectedIndex].text
 
- 
-        resultadoFinal = eloPrice[`${lgadvd}`] - eloPrice[`${lgadva}`]
-        descontoFinal = (desconto / 100 + 1) * resultadoFinal
-  
 
-    document.getElementById("valor").innerHTML = `<small >POR:</small> ${moedaBrasil(resultadoFinal)} </p>`
+    resultadoFinal = eloPrice[`${lgadvd}`] - eloPrice[`${lgadva}`]
+    descontoPincipal = (1 - descontoP / 100) * resultadoFinal
+    descontoFinal = (desconto / 100 + 1) * resultadoFinal
+
+
+    document.getElementById("valor").innerHTML = `<small >POR:</small> ${moedaBrasil(descontoPincipal)} </p>`
     document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil(descontoFinal)}<p>`
 
 }

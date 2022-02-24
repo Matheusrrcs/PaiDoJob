@@ -1,4 +1,4 @@
- 
+
 
 const eloPrice = {
     ferroIV: 0,
@@ -21,26 +21,27 @@ const eloPrice = {
     platinaIII: 577,
     platinaII: 632,
     platinaI: 687,
-    esmeraldaIV:742,
-    esmeraldaIII:892,
-    esmeraldaII:1062,
-    esmeraldaI:1252,
-    diamanteIV:1452,
-    diamanteIII:1692,
-    diamanteII:1952,
-    diamanteI:2252,
+    esmeraldaIV: 742,
+    esmeraldaIII: 892,
+    esmeraldaII: 1062,
+    esmeraldaI: 1252,
+    diamanteIV: 1452,
+    diamanteIII: 1692,
+    diamanteII: 1952,
+    diamanteI: 2252,
     mestreIV: 2672,
     mestreIII: 2672,
     mestreII: 2672,
     mestreI: 2672
- 
+
 }
 const desconto = 20
+const descontoP = 10
 
-document.getElementById("valor").innerHTML = `<small >POR:</small>  ${moedaBrasil(eloPrice.ouroIV - eloPrice.prataIV)} </p>`
-document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil((desconto/100 + 1) * (eloPrice.ouroIV - eloPrice.prataIV))}</p>`
- 
- 
+document.getElementById("valor").innerHTML = `<small >POR:</small>  ${moedaBrasil((1 - descontoP / 100) * (eloPrice.ouroIV - eloPrice.prataIV))} </p>`
+document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil((desconto / 100 + 1) * (eloPrice.ouroIV - eloPrice.prataIV))}</p>`
+
+
 
 function Eloprice() {
     let lga = document.getElementById("ligaatual").value
@@ -51,27 +52,29 @@ function Eloprice() {
 
 
     let resultadoFinal
-    let descontoFinal 
+    let descontoFinal
+    let descontoPincipal
 
     let lgadva = lga + dva.options[dva.selectedIndex].text
     let lgadvd = lgd + dvd.options[dvd.selectedIndex].text
- 
-   
-    resultadoFinal = eloPrice[`${lgadvd}`] - eloPrice[`${lgadva}`]
-     descontoFinal = ( desconto/100 + 1) * resultadoFinal
-  
 
-     document.getElementById("valor").innerHTML = `<small >POR:</small> ${moedaBrasil(resultadoFinal)} </p>`
-     document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil(descontoFinal)}<p>`
- 
+
+    resultadoFinal = eloPrice[`${lgadvd}`] - eloPrice[`${lgadva}`]
+    descontoPincipal = (1 - descontoP / 100) * resultadoFinal
+    descontoFinal = (desconto / 100 + 1) * resultadoFinal
+
+
+    document.getElementById("valor").innerHTML = `<small >POR:</small> ${moedaBrasil(descontoPincipal)} </p>`
+    document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil(descontoFinal)}<p>`
+
 }
 
 
-function moedaBrasil(valor){
-   
-	var valor  
-	var valorFormatado = valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
- 
+function moedaBrasil(valor) {
+
+    var valor
+    var valorFormatado = valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
 
     return valorFormatado
 }
