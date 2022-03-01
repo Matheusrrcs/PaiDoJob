@@ -11,7 +11,7 @@ const descontoP = 10
 
 document.getElementById("valor").innerHTML = `<small >POR:</small>  ${moedaBrasil((1 - descontoP / 100) * coachPrice.cinco)} </p>`
 
-// document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil((desconto / 100 + 1) * coachPrice.cinco)}</p>`
+document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil((desconto / 100 + 1) * coachPrice.cinco)}</p>`
 
 
 function Eloprice() {
@@ -27,13 +27,8 @@ function Eloprice() {
     descontoFinal = (desconto / 100 + 1) * resultadoFinal
     
 
-<<<<<<< HEAD
     document.getElementById("valor").innerHTML = `<small style="font-size: 20px;">POR:</small> ${moedaBrasil(resultadoFinal)}</p>`
-    // document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil(descontoFinal)}</p>`
-=======
-    document.getElementById("valor").innerHTML = `<small style="font-size: 20px;">POR:</small> R$ ${ descontoPincipal},00</p>`
     document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil(descontoFinal)}</p>`
->>>>>>> parent of 4cca3af (desconto tirado)
 
 }
 

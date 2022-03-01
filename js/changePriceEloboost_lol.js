@@ -39,13 +39,8 @@ const eloPrice = {
 const desconto = 20
 const descontoP = 10
 
-<<<<<<< HEAD
 document.getElementById("valor").innerHTML = `<small >POR:</small>  ${moedaBrasil( eloPrice.ouroIV - eloPrice.prataIV )}</p>`
-// document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil((desconto / 100 + 1) * (eloPrice.ouroIV - eloPrice.prataIV))}</p>`
-=======
-document.getElementById("valor").innerHTML = `<small >POR:</small>  ${moedaBrasil((1 - descontoP / 100) * (eloPrice.ouroIV - eloPrice.prataIV))}</p>`
 document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil((desconto / 100 + 1) * (eloPrice.ouroIV - eloPrice.prataIV))}</p>`
->>>>>>> parent of 4cca3af (desconto tirado)
 
 
 
@@ -71,13 +66,8 @@ function Eloprice() {
     descontoFinal = (desconto / 100 + 1) * resultadoFinal
 
 
-<<<<<<< HEAD
     document.getElementById("valor").innerHTML = `<small >POR:</small> ${moedaBrasil(resultadoFinal)} </p>`
-    // document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil(descontoFinal)}<p>`
-=======
-    document.getElementById("valor").innerHTML = `<small >POR:</small> ${moedaBrasil(descontoPincipal)} </p>`
     document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil(descontoFinal)}<p>`
->>>>>>> parent of 4cca3af (desconto tirado)
 
 }
 
