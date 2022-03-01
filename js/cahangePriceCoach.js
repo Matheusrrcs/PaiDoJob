@@ -9,7 +9,7 @@ const coachPrice = {
 const desconto = 20
 const descontoP = 10
 
-document.getElementById("valor").innerHTML = `<small >POR:</small>  ${moedaBrasil((1 - descontoP / 100) * coachPrice.cinco)} </p>`
+document.getElementById("valor").innerHTML = `<small >POR:</small>  ${moedaBrasil( coachPrice.cinco)} </p>`
 
 document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil((desconto / 100 + 1) * coachPrice.cinco)}</p>`
 
