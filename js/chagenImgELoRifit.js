@@ -63,23 +63,20 @@ function bigElo() {
 
         btn.classList.add("d-none")
         value.classList.add("d-none")
-       
-         
+        msg.classList.remove("d-none")
     }
 
     else if (elo[`${lga}`] == elo[`${lgd}`] && dva <= dvd) {
         btn.classList.add("d-none")
         value.classList.add("d-none")
-        
-       
+        msg.classList.remove("d-none")
     }
 
 
     else {
         btn.classList.remove("d-none")
         value.classList.remove("d-none")
-       
-     
+        msg.classList.add("d-none")
     }
 
 
