@@ -72,7 +72,7 @@ function Eloprice() {
 
 
 
-    document.getElementById("valor").innerHTML = `<small >POR:</small> ${moedaBrasil(resultadoFinal)} </p>`
+    document.getElementById("valor").innerHTML = `<small >POR:</small> ${moedaBrasil(descontoPincipal)} </p>`
     document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil(descontoFinal)}<p>`
 
 }
