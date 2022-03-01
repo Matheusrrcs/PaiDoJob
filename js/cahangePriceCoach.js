@@ -11,7 +11,7 @@ const descontoP = 10
 
 document.getElementById("valor").innerHTML = `<small >POR:</small>  ${moedaBrasil(  coachPrice.cinco)} </p>`
 
-document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil((desconto / 100 + 1) * coachPrice.cinco)}</p>`
+// document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil((desconto / 100 + 1) * coachPrice.cinco)}</p>`
 
 
 function Eloprice() {
@@ -28,7 +28,7 @@ function Eloprice() {
     
 
     document.getElementById("valor").innerHTML = `<small style="font-size: 20px;">POR:</small> ${moedaBrasil(resultadoFinal)}</p>`
-    document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil(descontoFinal)}</p>`
+    // document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil(descontoFinal)}</p>`
 
 }
 
