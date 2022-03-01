@@ -27,7 +27,7 @@ function Eloprice() {
     descontoFinal = (desconto / 100 + 1) * resultadoFinal
     
 
-    document.getElementById("valor").innerHTML = `<small style="font-size: 20px;">POR:</small> R$ ${ descontoPincipal},00</p>`
+    document.getElementById("valor").innerHTML = `<small style="font-size: 20px;">POR:</small> R$ ${ resultadoFinal},00</p>`
     document.getElementById("valorAntigo").innerHTML = `<small >de:</small>  ${moedaBrasil(descontoFinal)}</p>`
 
 }
