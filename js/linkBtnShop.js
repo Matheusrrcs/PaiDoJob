@@ -1,6 +1,6 @@
 function whatsapp() {
 
-    let typeT = document.getElementById("title").textContent.toLocaleLowerCase().trim()
+    let titles = document.getElementById("title").textContent.toLocaleLowerCase().trim()
 
     let lga = document.getElementById("ligaatual").value
 
@@ -26,9 +26,16 @@ function whatsapp() {
     }
 
 
-    text = 'Olá,%20estou%20no%20site,%20e%20quero%20' + typeT + '%20para%20' + ch+ '.%20Estou%20no%20' + lga + '%20' + dva.options[dva.selectedIndex].text + '%20e%20quero%20chegar%20no%20' + lgd + '%20' + dvd.options[dvd.selectedIndex].text + ',  ' + value + "."
+    if (lgd == 'mestre' || lgd == 'graomestre' || lgd == 'desafiante' ) {
 
+        text = 'Olá,%20estou%20no%20site,%20e%20quero%20' + titles + '%20para%20' + ch + '.%20Estou%20no%20' + lga + '%20' + dva.options[dva.selectedIndex].text + '%20e%20quero%20chegar%20no%20' + lgd + '%20' + value + "."
+    }
+    else {
+        text = 'Olá,%20estou%20no%20site,%20e%20quero%20' + titles + '%20para%20' + ch + '.%20Estou%20no%20' + lga + '%20' + dva.options[dva.selectedIndex].text + '%20e%20quero%20chegar%20no%20' + lgd + '%20' + dvd.options[dvd.selectedIndex].text + ',  ' + value + "."
 
+    }
+
+ 
 
     var url = `https://${type}.whatsapp.com/send?1=pt_BR&phone=55718755-8100&text=`.concat(text);
 
