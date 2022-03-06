@@ -12,7 +12,7 @@ const eloPrice = {
     prataIII: 184,
     prataII: 209,
     prataI: 234,
-    ouroIV: 246,
+    ouroIV: 264,
     ouroIII: 294,
     ouroII: 324,
     ouroI: 354,
