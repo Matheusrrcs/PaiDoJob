@@ -22,19 +22,19 @@ const eloPrice = {
     diamanteIV: 395,
     diamanteIII: 455,
     diamanteII: 535,
-    diamanteI: 655,
-    mestreIV: 805,
-    mestreIII: 805,
-    mestreII: 805,
-    mestreI: 805,
-    graomestreIV: 1525,
-    graomestreIII: 1525,
-    graomestreII: 1525,
-    graomestreI: 1525,
-    desafianteIV: 3215,
-    desafianteIII: 3215,
-    desafianteII: 3215,
-    desafianteI: 3215
+    diamanteI:625,
+    mestreIV: 737,
+    mestreIII: 737,
+    mestreII: 737,
+    mestreI: 737,
+    graomestreIV: 1314,
+    graomestreIII: 1314,
+    graomestreII: 1314,
+    graomestreI: 1314,
+    desafianteIV: 2539,
+    desafianteIII: 2539,
+    desafianteII: 2539,
+    desafianteI: 2539
 }
 const desconto = 20
 const descontoP = 10
